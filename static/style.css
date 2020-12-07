@@ -1,0 +1,24 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 body            \{ font-family: sans-serif; background: #3d3d3d; \}\
+a, h1, h2       \{ color: #2a5f82; \}\
+h1, h2          \{ font-family: 'Times', Gadget, sans-serif; margin: 10; \}\
+h1              \{ border-bottom: 10px solid #eee; \}\
+h2              \{ font-size: 1.5em; \}\
+\
+.page           \{ margin: 2em auto; max-width: 60em; border: 10px solid #ccc;\
+                  padding: 1em; background: white; \}\
+.entries        \{ list-style: none; margin: 0; padding: 0; \}\
+.entries tr     \{ margin: 0.8em 1.2em; \}\
+.entries td h2  \{ margin-left: -1em; \}\
+\
+.metanav        \{ text-align: left; font-size: 1em; padding: 0.3em;\
+                  margin-bottom: 1em; background: #ededed; \}\
+.flash          \{ background: #c0e4eb; padding: 0.5em;\
+                  border: 1px solid #070f14; \}\
+.error          \{ background: #f0d6d6; padding: 0.5em; \}}

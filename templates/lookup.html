@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {text-decoration: underline ; font-kerning: none; color: #0000e9; -webkit-text-stroke: 0px #0000e9}
+    td.td1 {width: 119.5px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td2 {width: 47.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td3 {width: 64.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td4 {width: 78.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td5 {width: 94.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td6 {width: 84.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td7 {margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">{% extends "header.html" %} {% block content %} {% if not session.logged_in %}</span></p>
+<p class="p2"><span class="s1"><b>Book Lookup</b></span></p>
+<p class="p3"><span class="s1">BigiCAT allows you to create a book catalog to track your library of books.</span></p>
+<p class="p3"><span class="s1">Search for books by ISBN to add to your library, delete those you do not have anymore.</span></p>
+<p class="p3"><span class="s1">You will need to <a href="file:///login"><span class="s2">login</span></a> to use BibiCat:<br>
+{% else %}<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">ISBN #:<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">{% endif %}</span></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1"><b>Title</b></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1"><b>Author(s)</b></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s1"><b>Page Count</b></span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1"><b>Average Rating</b></span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1"><b>Add to Catalog?</b></span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p4"><span class="s1"><b></b></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">{% if thumbnail %}<span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p1"><span class="s1">{{ title }}</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p1"><span class="s1">{{ authors }}</span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p1"><span class="s1">{{ pagecount }}</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{{ averagerating }}</span></p>
+      </td>
+      <td colspan="2" valign="middle" class="td6">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p1"><span class="s1">{% endif %} {% endblock %}</span></p>
+</body>
+</html>
